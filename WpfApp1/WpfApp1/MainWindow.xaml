@@ -6,23 +6,37 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Orientation="Vertical" Margin="40,20,40,20">
-        <Label Content="Label" 
-           HorizontalAlignment="Center" 
-           Margin="0,0,0,10"/>
+    <StackPanel Margin="10" VerticalAlignment="Center">
 
 
 
-        <TextBox Text="TextBox" Margin="0,3"/>
-        <TextBox Text="TextBox" Margin="0,3"/>
-        <TextBox Text="TextBox" Margin="0,3"/>
-        <TextBox Text="TextBox" Margin="0,3"/>
 
+        <WrapPanel Margin="0,0,0,5" HorizontalAlignment="Center">
+            <Label Content="Label" VerticalAlignment="Center" Margin="5"/>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+        </WrapPanel>
 
-        <Button Content="Button" 
-            HorizontalAlignment="Center" 
-            Width="150" Height="25" 
-            Margin="0,30,0,0"/>
+        <WrapPanel Margin="0,0,0,5" HorizontalAlignment="Center">
+            <Label Content="Label" VerticalAlignment="Center" Margin="5"/>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+            <TextBox Width="60" Margin="5">TextBox</TextBox>
+        </WrapPanel>
+
+        <Button Content="Button"
+            Width="80"
+            Height="25"
+            HorizontalAlignment="Center"/>
     </StackPanel>
 
 </Window>
