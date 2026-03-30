@@ -6,37 +6,42 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Margin="10" VerticalAlignment="Center">
+    <DockPanel>
+
+        <Label Content="Label"
+             DockPanel.Dock="Top"
+             HorizontalAlignment="Center"
+             Margin="0,0,0,10"/>
+
+        <WrapPanel  HorizontalAlignment="Center"
+                 VerticalAlignment="Stretch"
+                 ItemHeight="120">
+
+            <TextBox Width="300"
+                   Margin="5"
+                   AcceptsReturn="True"/>
+
+            <Button Content="Button"
+                  Width="120"
+                  Height="25"
+                  VerticalAlignment="Center"
+                  Margin="10,0"/>
+
+            <TextBox Width="300"
+                   Margin="5"
+                   AcceptsReturn="True"/>
 
 
 
 
-        <WrapPanel Margin="0,0,0,5" HorizontalAlignment="Center">
-            <Label Content="Label" VerticalAlignment="Center" Margin="5"/>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
+
+
+
+
+
+
         </WrapPanel>
 
-        <WrapPanel Margin="0,0,0,5" HorizontalAlignment="Center">
-            <Label Content="Label" VerticalAlignment="Center" Margin="5"/>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-            <TextBox Width="60" Margin="5">TextBox</TextBox>
-        </WrapPanel>
-
-        <Button Content="Button"
-            Width="80"
-            Height="25"
-            HorizontalAlignment="Center"/>
-    </StackPanel>
+    </DockPanel>
 
 </Window>
