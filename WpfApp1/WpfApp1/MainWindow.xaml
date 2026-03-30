@@ -6,42 +6,21 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <DockPanel>
+    <Canvas Background="Cyan">
 
         <Label Content="Label"
-             DockPanel.Dock="Top"
-             HorizontalAlignment="Center"
-             Margin="0,0,0,10"/>
-
-        <WrapPanel  HorizontalAlignment="Center"
-                 VerticalAlignment="Stretch"
-                 ItemHeight="120">
-
-            <TextBox Width="300"
-                   Margin="5"
-                   AcceptsReturn="True"/>
-
-            <Button Content="Button"
-                  Width="120"
-                  Height="25"
-                  VerticalAlignment="Center"
-                  Margin="10,0"/>
-
-            <TextBox Width="300"
-                   Margin="5"
-                   AcceptsReturn="True"/>
+               Canvas.Left="20"
+               Canvas.Top="20"/>
 
 
+        <TextBox Text="TextBox"
+                 Canvas.Left="40"
+                 Canvas.Top="40"/>
 
+        <Button Content="Button"
+                Canvas.Left="60"
+                Canvas.Top="60"/>
 
-
-
-
-
-
-
-        </WrapPanel>
-
-    </DockPanel>
+    </Canvas>
 
 </Window>
