@@ -5,22 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Canvas Background="Cyan">
+        Title="TextEditor" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10"></Border>
 
-        <Label Content="Label"
-               Canvas.Left="20"
-               Canvas.Top="20"/>
-
-
-        <TextBox Text="TextBox"
-                 Canvas.Left="40"
-                 Canvas.Top="40"/>
-
-        <Button Content="Button"
-                Canvas.Left="60"
-                Canvas.Top="60"/>
-
-    </Canvas>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Name="stack1">
+            <Button Width="70" ToolTip="Відкрити..." >
+                <Image Source="/img/open.png"></Image>
+            </Button>
+            <Button Width="70" ToolTip="Очистити" >
+                <Image Source="/img/tr.png"></Image>
+            </Button>
+            <Button Width="70" ToolTip="Копіювати">
+                <Image Source="/img/copy.png"></Image>
+            </Button>
+            <Button Width="70" ToolTip="Вставити">
+                <Image Source="/img/input.png"></Image>
+            </Button>
+        </StackPanel>
+     
+    </Grid>
 
 </Window>
