@@ -7,5 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
+	
+	<ItemGroup>
+		<Resource Include="img\*.png" />
+	</ItemGroup>
 </Project>

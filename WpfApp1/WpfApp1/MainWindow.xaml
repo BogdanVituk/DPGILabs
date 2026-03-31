@@ -6,14 +6,27 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="TextEditor" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="BorderBrush" Value="White"></Setter>
+        </Style>
+
+        <LinearGradientBrush x:Key="linearPanelBrush" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="Yellow" Offset="0"></GradientStop>
+            <GradientStop Color="Aqua" Offset="0.5"></GradientStop>
+            <GradientStop Color="#FFDADA1A" Offset="1"></GradientStop>
+        </LinearGradientBrush>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10"></Border>
+        <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5" Background="{StaticResource linearPanelBrush}">
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Name="stack1">
+            <StackPanel  Orientation="Horizontal">
             <Button Width="70" ToolTip="Відкрити..." >
                 <Image Source="/img/open.png"></Image>
             </Button>
@@ -27,7 +40,30 @@
                 <Image Source="/img/input.png"></Image>
             </Button>
         </StackPanel>
-     
+        </Border>
+        <Border Grid.Row="1" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5" 
+                Background="{StaticResource linearPanelBrush}">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBox Grid.Row="0" 
+                         VerticalScrollBarVisibility="Visible" 
+                         TextWrapping="Wrap" 
+                         AcceptsReturn="True" />
+
+                <DockPanel Grid.Row="1" Margin="0,10,0,0">
+                    <Button DockPanel.Dock="Bottom" 
+                            Style="{x:Null}"
+                            Content="OK" 
+                            Width="50" Height="25" 
+                            HorizontalAlignment="Center" />
+                </DockPanel>
+            </Grid>
+        </Border>
+        
     </Grid>
 
 </Window>
