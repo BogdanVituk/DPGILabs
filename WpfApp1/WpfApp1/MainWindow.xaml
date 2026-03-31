@@ -27,16 +27,16 @@
         <Border Grid.Row="0" BorderBrush="#FFCBBEBE" BorderThickness="2" CornerRadius="10" Margin="5" Background="{StaticResource linearPanelBrush}">
 
             <StackPanel  Orientation="Horizontal">
-            <Button Width="70" ToolTip="Відкрити..." >
+                <Button Width="70" ToolTip="Відкрити..." Command="ApplicationCommands.Open">
                 <Image Source="/img/open.png"></Image>
             </Button>
-            <Button Width="70" ToolTip="Очистити" >
+                <Button Width="70" ToolTip="Очистити" Command="ApplicationCommands.Delete">
                 <Image Source="/img/tr.png"></Image>
             </Button>
-            <Button Width="70" ToolTip="Копіювати">
+                <Button Width="70" ToolTip="Копіювати" Command="ApplicationCommands.Copy">
                 <Image Source="/img/copy.png"></Image>
             </Button>
-            <Button Width="70" ToolTip="Вставити">
+                <Button Width="70" ToolTip="Вставити" Command="ApplicationCommands.Paste">
                 <Image Source="/img/input.png"></Image>
             </Button>
         </StackPanel>
